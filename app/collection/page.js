@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { fetchData } from "../api/api";
+import NavBar from "@/components/navbar";
 
 export default function Collection() {
   const [data, setData] = useState(null);
@@ -23,6 +24,7 @@ export default function Collection() {
   return (
     <main>
       <section>
+        <NavBar />
         <div className="flex justify-center text-2xl py-10">
           <h1>Collection</h1>
         </div>
