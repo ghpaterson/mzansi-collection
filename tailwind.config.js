@@ -11,6 +11,9 @@ module.exports = {
         "hero-image":
           "url('https://images.pexels.com/photos/1427273/pexels-photo-1427273.jpeg')",
       },
+      fontFamily: {
+        baskerville: ["Baskervville", "serif"],
+      },
     },
   },
   plugins: [],

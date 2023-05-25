@@ -7,12 +7,16 @@ export default function Home() {
     <main>
       <section className="w-full h-screen relative bg-hero-image bg-cover bg-top">
         <NavBar />
-        <div className="flex justify-between">
-          <div className="flex flex-col justify-center text-3xl text-white px-20">
-            <h1>'Inspirational quote here</h1>
-            <h1>please and thank you'</h1>
+        <div className="flex flex-col lg:flex-row  lg:justify-between ">
+          <div className="flex flex-col justify-center lg:w-96 text-lg lg:text-xl gap-2 text-white font-baskerville mx-auto lg:mx-0 mt-10 lg:px-20 lg:ml-20">
+            <h1 className=" font-extralight">
+              'Art is a way of seeing the world in a new way. It can help us to
+              understand ourselves and our place in the world. Art can also be a
+              way of making sense of the world around us.'
+            </h1>
+            <h2>- Marlene Dumas</h2>
           </div>
-          <div className="flex flex-col justify-center items-center gap-10 bg-purple-700 w-96 h-96 mt-24 text-white">
+          <div className="flex flex-col justify-center items-center gap-10 bg-purple-700 py-10 lg:w-96 lg:h-96 mt-24 text-white font-baskerville">
             <div className="flex flex-col items-center text-3xl">
               <h1>A Collection of </h1>
               <h1>South African Artists</h1>
@@ -25,7 +29,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end px-16 mt-10 text-white">
+        <div className="flex justify-center lg:justify-end lg:px-16 mt-10 text-white">
           <h2>Copyright V&A Museum, London</h2>
         </div>
       </section>
