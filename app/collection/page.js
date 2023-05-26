@@ -5,8 +5,20 @@ import { BsArrowReturnRight } from "react-icons/bs";
 export default function Collection() {
   return (
     <main>
-      <section className="w-full h-screen relative bg-white">
+      <section className="w-full h-[600px] relative bg-collections-image bg-cover bg-top">
         <NavBar />
+        <div className="flex flex-col lg:flex-row  lg:justify-start lg:items-center ">
+          <div className="bg-purple-700 flex flex-col justify-center w-72 lg:w-80 lg:h-80 text-base lg:text-xl gap-2 text-white font-baskerville mx-auto lg:mt-20 lg:mx-0">
+            <h1 className=" font-extralight">
+              Explore the growing collection of South African Artists
+            </h1>
+          </div>
+        </div>
+        <div className="flex justify-center lg:justify-end lg:px-16 mt-4 lg:mt-10 text-white">
+          <h2>Copyright V&A Museum, London</h2>
+        </div>
+      </section>
+      <section>
         <div className="flex justify-center items-center h-3/4 mt-6 ">
           <div className="grid grid-rows-3 w-3/4 gap-4 text-white ">
             <div className="bg-pink-500 h-44">
