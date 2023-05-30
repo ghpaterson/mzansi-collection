@@ -8,7 +8,9 @@ export default function NavBar() {
           <Link href="/" alt="logo">
             <h1 className="ml-4">the</h1>
             <h1>MZANSI</h1>
-            <h1>COLLECTION</h1>
+            <h1>
+              COLLECTION <span className="font-bold text-xs"> BETA</span>
+            </h1>
           </Link>
         </div>
         <ul className="flex justify-end gap-4 ">

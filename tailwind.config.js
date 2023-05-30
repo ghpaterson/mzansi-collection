@@ -12,6 +12,8 @@ module.exports = {
           "url('https://images.pexels.com/photos/1427273/pexels-photo-1427273.jpeg')",
         "about-image":
           "url('https://images.pexels.com/photos/9001055/pexels-photo-9001055.jpeg')",
+        "about-image2":
+          "url('https://images.pexels.com/photos/4577152/pexels-photo-4577152.jpeg')",
         "goldblatt-image":
           "url('https://framemark.vam.ac.uk/collections/2010EM4833/full/1400,/0/default.jpg')",
         "muholi-image":
