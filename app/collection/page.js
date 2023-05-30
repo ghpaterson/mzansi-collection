@@ -43,7 +43,7 @@ export default function Collection() {
             <div className=" flex flex-col items-center justify-between lg:w-96 lg:h-[400px] shadow-xl py-10">
               <h1 className="text-xl">Diane Victor</h1>
               <div className=" h-60 w-60 lg:w-96 lg:h-96 bg-victor-image bg-cover bg-center"></div>
-              <Link href="/muholi" alt="muholi">
+              <Link href="/victor" alt="victor">
                 <div className=" flex justify-center items-center bg-transparent w-60 gap-4 border-solid border-black border-2 rounded-xl py-2 px-4 mt-4 text-black">
                   <button>See the Collection</button>
                   <BsArrowReturnRight />
