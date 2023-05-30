@@ -25,8 +25,21 @@ export default function Victor() {
     <main>
       <section>
         <NavBar />
-        <div className="flex justify-center text-2xl py-10">
+        <div className="flex flex-col items-center justify-center text-2xl px-20 py-10 gap-6">
           <h1>Diane Victor</h1>
+          <p className="text-lg">
+            Diane Victor is a South African artist known for her satirical and
+            social commentary of contemporary South African politics. She was
+            born in Witbank, South Africa, in 1964. Victor's work is often
+            controversial, but it is also critically acclaimed. She has
+            exhibited her work in galleries and museums around the world, and
+            she has won numerous awards, including the Standard Bank Young
+            Artist Award in 1990 and the SAMA Award for Visual Art in 2010.
+            Victor's work is characterized by its wit, its intelligence, and its
+            unflinching gaze on the realities of South African society. She is a
+            powerful voice in South African art, and her work is sure to
+            continue to be relevant for many years to come.
+          </p>
         </div>
       </section>
       <section>
