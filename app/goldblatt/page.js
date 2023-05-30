@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchMuholiData } from "../api/api";
+import { fetchGoldblattData } from "../api/api";
 import NavBar from "@/components/navbar";
 
-export default function Muholi() {
+export default function Goldblatt() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
       try {
-        const responseData = await fetchMuholiData();
+        const responseData = await fetchGoldblattData();
         setData(responseData);
         console.log(responseData);
       } catch (error) {
@@ -26,7 +26,7 @@ export default function Muholi() {
       <section>
         <NavBar />
         <div className="flex justify-center text-2xl py-10">
-          <h1>Zanele Muholi</h1>
+          <h1>David Goldblatt</h1>
         </div>
       </section>
       <section>
@@ -49,7 +49,7 @@ export default function Muholi() {
               ))}
             </ul>
           ) : (
-            <p>Chairs Comming Right up!</p>
+            <p>Goldblatt coming at ya..</p>
           )}
         </div>
       </section>

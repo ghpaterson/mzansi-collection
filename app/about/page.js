@@ -6,14 +6,14 @@ export default function About() {
       {/* header image */}
       <section className="w-full h-[600px] relative bg-about-image bg-center bg-cover bg-fixed">
         <NavBar />
-        <div className="flex flex-col lg:flex-row  lg:justify-end lg:items-center ">
-          <div className="bg-purple-700 flex flex-col justify-center items-center w-72 lg:w-96 lg:h-96 text-base lg:text-xl gap-2 text-white font-baskerville mx-auto lg:mt-12 lg:px-4 lg:mx-0">
+        <div className="flex flex-col mt-20 lg:mt-0 lg:flex-row  lg:justify-end lg:items-center ">
+          <div className="bg-purple-700 flex flex-col justify-center items-center w-72 h-72 lg:w-96 lg:h-96 text-base lg:text-xl gap-2 text-white font-baskerville mx-auto lg:mt-12 lg:px-4 lg:mx-0">
             <h1 className="">About the Mzansi Collection</h1>
           </div>
         </div>
       </section>
       <section>
-        <div className="bg-transparent shadow-lg flex flex-col w-screen h-96 px-20 py-20 gap-6 font-baskerville">
+        <div className="bg-transparent shadow-lg flex flex-col w-screen h-full lg:h-96 px-20 py-20 gap-6 font-baskerville">
           <h1 className="text-3xl ">What is Mzansi?</h1>
           <p>
             Mzansi is a colloquial name for South Africa. It is derived from the
@@ -32,7 +32,7 @@ export default function About() {
       </section>
       <section className="w-full h-[600px] relative bg-about-image2 bg-center bg-cover bg-fixed"></section>
       <section>
-        <div className="bg-transparent shadow-lg flex flex-col w-screen h-96 px-20 py-20 gap-6 font-baskerville">
+        <div className="bg-transparent shadow-lg flex flex-col w-screen h-full lg:h-96 px-20 py-20 gap-6 font-baskerville">
           <h1 className="text-3xl ">Why the Mzansi Collection?</h1>
           <p>
             I have always loved art and design. I was born in South Africa, and
