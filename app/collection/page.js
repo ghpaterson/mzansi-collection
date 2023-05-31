@@ -1,4 +1,5 @@
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 import Link from "next/link";
 import { BsArrowReturnRight } from "react-icons/bs";
 
@@ -55,9 +56,7 @@ export default function Collection() {
       </section>
       {/* v&a footer */}
       <section className="py-10">
-        <div className="flex justify-center lg:justify-end lg:px-16 mt-4 lg:mt-10 text-black">
-          <h2>Copyright V&A Museum, London</h2>
-        </div>
+        <Footer />
       </section>
     </main>
   );

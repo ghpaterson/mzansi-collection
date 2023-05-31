@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { fetchGoldblattData } from "../api/api";
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function Goldblatt() {
   const [data, setData] = useState(null);
@@ -64,6 +65,7 @@ export default function Goldblatt() {
           )}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

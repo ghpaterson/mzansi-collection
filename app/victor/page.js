@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { fetchVictorData } from "../api/api";
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function Victor() {
   const [data, setData] = useState(null);
@@ -66,6 +67,7 @@ export default function Victor() {
           )}
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

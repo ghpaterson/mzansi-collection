@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { fetchMuholiData } from "../api/api";
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Muholi() {
   const [data, setData] = useState(null);
@@ -48,22 +50,31 @@ export default function Muholi() {
               {data.records.map((record) => (
                 <li key={record.systemNumber}>
                   <h2>Title: {record._primaryTitle || "Untitled"}</h2>
-                  <img
-                    src={record._images._primary_thumbnail}
-                    alt="thumbnail"
-                  />
+                  <Link
+                    href={`/muholi/${record.systemNumber}`}
+                    alt="thumbnail-link"
+                  >
+                    <img
+                      src={record._images._primary_thumbnail}
+                      alt="thumbnail"
+                    />
+                  </Link>
 
                   <p>Artist: {record._primaryMaker.name}</p>
                   <p>Medium: {record._primaryMaker.association}</p>
                   <p>Location: {record._primaryPlace}</p>
                   <p>Date: {record._primaryDate}</p>
+                  <p>ID: {record.systemNumber}</p>
                 </li>
               ))}
             </ul>
           ) : (
-            <p>Chairs Comming Right up!</p>
+            <p>Muholi coming at ya!</p>
           )}
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </main>
   );

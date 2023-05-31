@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 
 export default function About() {
@@ -49,6 +50,7 @@ export default function About() {
           </p>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
