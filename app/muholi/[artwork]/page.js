@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import Link from "next/link";
 
-export default function Artwork({ params }) {
+export default async function Artwork({ params }) {
   console.log(params);
   return (
     <main>

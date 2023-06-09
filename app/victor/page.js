@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { fetchVictorData } from "../api/api";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Victor() {
   const [data, setData] = useState(null);
@@ -26,7 +27,7 @@ export default function Victor() {
     <main>
       <section>
         <NavBar />
-        <div className="flex flex-col items-center justify-center text-2xl px-20 py-10 gap-6">
+        <div className="flex flex-col items-center justify-center text-2xl px-60 py-10 gap-6">
           <h1>Diane Victor</h1>
           <p className="text-lg">
             Diane Victor is a South African artist known for her satirical and
@@ -46,14 +47,22 @@ export default function Victor() {
       <section>
         <div>
           {data ? (
-            <ul className="flex flex-col gap-10 px-10">
+            <ul className="grid grid-cols-2 gap-10 mx-20">
               {data.records.map((record) => (
-                <li key={record.systemNumber}>
-                  <h2>Title: {record._primaryTitle || "Untitled"}</h2>
-                  <img
-                    src={record._images._primary_thumbnail}
-                    alt="thumbnail"
-                  />
+                <li key={record.systemNumber} className="shadow-xl px-6 py-12">
+                  <h2 className="text-lg font-bold py-2">
+                    {record._primaryTitle || "Untitled"}
+                  </h2>
+                  <Link
+                    href={`/victor/${record.systemNumber}`}
+                    alt="thumbnail-link"
+                  >
+                    <img
+                      src={record._images._primary_thumbnail}
+                      alt="thumbnail"
+                      className="py-2"
+                    />
+                  </Link>
 
                   <p>Artist: {record._primaryMaker.name}</p>
                   <p>Medium: {record._primaryMaker.association}</p>

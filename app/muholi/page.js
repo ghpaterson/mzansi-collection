@@ -27,7 +27,7 @@ export default function Muholi() {
     <main>
       <section>
         <NavBar />
-        <div className="flex flex-col justify-center items-center text-2xl py-10 px-20 gap-6">
+        <div className="flex flex-col justify-center items-center text-2xl py-10 px-60 gap-6">
           <h1>Zanele Muholi</h1>
           <p className="text-lg">
             Zanele Muholi's work addresses the sexual and gender identity of
@@ -44,12 +44,14 @@ export default function Muholi() {
         </div>
       </section>
       <section>
-        <div>
+        <div className="">
           {data ? (
-            <ul className="flex flex-col gap-10 px-10">
+            <ul className="grid grid-cols-2 gap-10 mx-20">
               {data.records.map((record) => (
-                <li key={record.systemNumber}>
-                  <h2>Title: {record._primaryTitle || "Untitled"}</h2>
+                <li key={record.systemNumber} className=" shadow-xl px-6 py-12">
+                  <h2 className="text-lg font-bold py-2">
+                    {record._primaryTitle || "Untitled"}
+                  </h2>
                   <Link
                     href={`/muholi/${record.systemNumber}`}
                     alt="thumbnail-link"
@@ -57,6 +59,7 @@ export default function Muholi() {
                     <img
                       src={record._images._primary_thumbnail}
                       alt="thumbnail"
+                      className="py-2"
                     />
                   </Link>
 
@@ -64,7 +67,6 @@ export default function Muholi() {
                   <p>Medium: {record._primaryMaker.association}</p>
                   <p>Location: {record._primaryPlace}</p>
                   <p>Date: {record._primaryDate}</p>
-                  <p>ID: {record.systemNumber}</p>
                 </li>
               ))}
             </ul>

@@ -21,7 +21,7 @@ export default function Collection() {
       <section className="pt-10 pb-32">
         <div className="flex justify-center items-center mt-6 ">
           <div className="lg:flex lg:flex-row lg:justify-around w-3/4 gap-4 text-black ">
-            <div className="flex flex-col items-center justify-between lg:w-96 lg:h-[400px] shadow-xl py-10">
+            <div className="flex flex-col items-center justify-between lg:w-96 lg:h-[400px] rounded-xl shadow-xl py-10">
               <h1 className="text-xl">Zanele Muholi</h1>
               <div className=" h-60 w-60 lg:w-96 lg:h-96 bg-muholi-image bg-contain"></div>
               <Link href="/muholi" alt="muholi">
@@ -31,7 +31,7 @@ export default function Collection() {
                 </div>
               </Link>
             </div>
-            <div className=" flex flex-col items-center justify-between lg:w-96 lg:h-[400px] shadow-xl py-10">
+            <div className=" flex flex-col items-center justify-between lg:w-96 lg:h-[400px] rounded-xl shadow-xl py-10">
               <h1 className="text-xl">David Goldblatt</h1>
               <div className=" h-60 w-60 lg:w-96 lg:h-96 bg-goldblatt-image bg-cover"></div>
               <Link href="/goldblatt" alt="goldblatt">
@@ -41,7 +41,7 @@ export default function Collection() {
                 </div>
               </Link>
             </div>
-            <div className=" flex flex-col items-center justify-between lg:w-96 lg:h-[400px] shadow-xl py-10">
+            <div className=" flex flex-col items-center justify-between lg:w-96 lg:h-[400px] rounded-xl shadow-xl py-10">
               <h1 className="text-xl">Diane Victor</h1>
               <div className=" h-60 w-60 lg:w-96 lg:h-96 bg-victor-image bg-cover bg-center"></div>
               <Link href="/victor" alt="victor">
